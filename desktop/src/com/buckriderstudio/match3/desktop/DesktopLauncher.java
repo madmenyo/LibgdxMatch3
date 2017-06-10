@@ -8,13 +8,15 @@ import com.buckriderstudio.match3.Match3;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 
-		packTextures();
+		packGems();
 
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+		config.width = 1080 / 2;
+		config.height = 1920 / 2;
 		new LwjglApplication(new Match3(), config);
 	}
 
-	private static void packTextures()
+	private static void packGems()
 	{
 		TexturePacker.Settings settings = new TexturePacker.Settings();
 
